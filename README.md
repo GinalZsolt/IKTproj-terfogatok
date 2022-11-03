@@ -1,1 +1,1 @@
-﻿# A
+﻿# Pitagorátor - az alakzatszámoló
