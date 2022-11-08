@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <title>Pitagorátor - Admin</title>
+</head>
+<body ng-app="app">
+    <div class="container-fluid p-0">
+        <header class="py-5 text-center"><h1>{{title}} - Admin</h1></header>
+        <main class="py-5" ng-controller="tableData">
+            <h2 class="fs-2 text-center my-5 text-danger">Nincs még beküldött adat!</h2>
+            <div ng-if="rows.length>0">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#.</th>
+                            <th>Név</th>
+                            <th>E-Mail</th>
+                            <th>Üzenet</th>
+                            <th>Műveletek</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </main>
+        <footer class="text-center">
+            Készítette: {{company}} {{madeIn}}.
+        </footer>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/angular.min.js"></script>
+    <script src="../assets/js/angular-animate.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/controllers/tableController.js"></script>
+</body>
+</html>

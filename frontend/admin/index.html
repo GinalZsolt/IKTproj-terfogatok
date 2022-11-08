@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <title>Pitagorátor - Bejelentkezés</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <header class="py-5 text-center"><h1>Pitagorátor - Admin</h1></header>
+        <main class="py-5">
+            <form action="/api/login" method="post" class="p-lg-4 p-md-3 m-auto col-lg-6 col-md-7 col-sm-10 rounded">
+                <h3 class="mb-4 fs-2">Bejelentkezés</h3>
+                <div class="mb-3 fs-5">
+                    <label for="username" class="form-label">Felhasználónév:</label>
+                    <input type="text" name="username" class="form-control">
+                </div>
+                <div class="mb-3 fs-5">
+                    <label for="passwd" class="form-label">Jelszó:</label>
+                    <input type="password" name="passwd" class="form-control">
+                </div>
+                <input type="submit" value="Bejelentkezés" class="btn my-3">
+            </form>
+        </main>
+        <footer class="text-center">
+            Készítette: KoZiGi
+        </footer>
+    </div>
+
+
+
+
+
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

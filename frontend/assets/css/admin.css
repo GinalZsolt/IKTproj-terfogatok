@@ -1,0 +1,36 @@
+body{
+    background: #c0c0c0;
+}
+.container-fluid{
+    display:flex;
+    flex-flow:column;
+    min-height: 100vh;
+}
+header{
+    background: var(--login-header);
+    color:white;
+}
+form{
+    border:2px solid var(--login-header);
+    background:#d9d9d9;
+}
+.btn{
+    border: 1px solid var(--login-header);
+}
+footer{
+    background: var(--promo-dark);
+    color: var(--bs-light);
+    min-height: 25px;
+    margin-top:auto;
+}
+.btn:hover{
+    background: var(--login-header);
+    color:white;
+    transform:scale(105%);
+}
+
+@media screen and (max-width:768px) {
+    form{
+        border: none;
+    }
+}
