@@ -1,0 +1,30 @@
+.container{
+    margin:0;
+    padding:0;
+    min-width: 100%;
+}
+.navbar,nav{
+    width: 100%;
+    background-color: #71ff63;
+    color:black;
+    font-weight: 500;
+}
+h1{
+    line-height: 100%;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    
+}
+#cimdiv{
+    color: white;
+}
+header{
+    background-color: #0049b6;
+    height: 200px;
+    padding: 5%;
+    padding-left: 15%;
+    margin :0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
