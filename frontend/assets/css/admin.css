@@ -6,16 +6,35 @@ body{
     flex-flow:column;
     min-height: 100vh;
 }
+.button{
+    border:2px solid var(--login-header);
+}
+.button:hover{
+    background: var(--login-header);
+    color:white;
+}
 header{
     background: var(--login-header);
     color:white;
+}
+#border{
+    background: rgb(217,217,217);
+}
+thead{
+    border-bottom: 3px solid black;
+}
+th{
+    border-right:1px solid black;
+}
+th:last-of-type{
+    border-right: none;
 }
 form{
     border:2px solid var(--login-header);
     background:#d9d9d9;
 }
-.btn{
-    border: 1px solid var(--login-header);
+main{
+    margin-top:auto;
 }
 footer{
     background: var(--promo-dark);
@@ -23,12 +42,15 @@ footer{
     min-height: 25px;
     margin-top:auto;
 }
-.btn:hover{
-    background: var(--login-header);
-    color:white;
-    transform:scale(105%);
+table{
+    background:white;
 }
-
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 @media screen and (max-width:768px) {
     form{
         border: none;
