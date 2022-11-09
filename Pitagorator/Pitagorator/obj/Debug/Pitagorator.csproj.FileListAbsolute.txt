@@ -8,3 +8,14 @@ D:\git_kd\terfogat\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.Generate
 D:\git_kd\terfogat\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.CoreCompileInputs.cache
 D:\git_kd\terfogat\Pitagorator\Pitagorator\obj\Debug\Pitagorator.exe
 D:\git_kd\terfogat\Pitagorator\Pitagorator\obj\Debug\Pitagorator.pdb
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\bin\Debug\Pitagorator.exe.config
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\bin\Debug\Pitagorator.exe
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\bin\Debug\Pitagorator.pdb
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.AssemblyReference.cache
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Form1.resources
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Properties.Resources.resources
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.GenerateResource.cache
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.CoreCompileInputs.cache
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.exe
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.pdb
+D:\git_kd\Pitagorator\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Szamolo.resources
