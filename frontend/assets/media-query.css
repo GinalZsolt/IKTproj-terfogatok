@@ -1,6 +1,17 @@
-/*nem nagy nézetnél:*/
+/*Kis nézet*/
+@media screen and (max-width: 767px) {
+    .mddisplay{display: none;}
+    .lgdisplay{display: none;}
+}
+
+/*Közepes nézet*/
 @media screen and (max-width: 991px) {
-   .lgdisplay{
-       display: none;
-   }
+    .smdisplay{display: none;}
+    .lgdisplay{display: none;}
+}
+
+/*Nagy nézet*/
+@media screen and (max-width: 1199px) {
+    .mddisplay{display: none;}
+    .smdisplay{display: none;}
 }
