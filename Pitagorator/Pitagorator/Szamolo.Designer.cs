@@ -36,7 +36,7 @@ namespace Pitagorator
             // p_box
             // 
             this.p_box.Image = global::Pitagorator.Properties.Resources.adat_gomb;
-            this.p_box.Location = new System.Drawing.Point(171, 103);
+            this.p_box.Location = new System.Drawing.Point(499, 92);
             this.p_box.Name = "p_box";
             this.p_box.Size = new System.Drawing.Size(100, 50);
             this.p_box.TabIndex = 0;
