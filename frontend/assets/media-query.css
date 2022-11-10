@@ -1,0 +1,6 @@
+/*nem nagy nézetnél:*/
+@media screen and (max-width: 991px) {
+   .lgdisplay{
+       display: none;
+   }
+}

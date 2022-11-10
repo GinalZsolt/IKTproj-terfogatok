@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="KoZiGi">
+    <link rel="shortcut icon" href="../assets/pitagyros.ico" type="image/x-icon">
     <meta name="title" content="Pitagorátor">
     <meta name="keywords" content="Pitagorátor,alakzat,test,síkidom,matematika,KoZiGi,Letöltés">
     <meta name="description" content="Pitagorátor Az alakzatszámító bemutató oldala, letöltéssel">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/promo.css">
+    <link rel="stylesheet" href="../assets/media-query.css">
     <title>Pitagorátor</title>
 </head>
 <body>
@@ -43,8 +45,8 @@
             <div class="col-lg-4">
               <div class="card " style="width: 18rem;">
                 <img src="" class="card-img-top" alt="">
+                <h5 class="card-header">Card title</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -53,8 +55,8 @@
             <div class="col-lg-4">
               <div class="card " style="width: 18rem;">
                 <img src="" class="card-img-top" alt="">
+                <h5 class="card-header">Card title</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
@@ -63,16 +65,36 @@
             <div class="col-lg-4">
               <div class="card " style="width: 18rem;">
                 <img src="" class="card-img-top" alt="">
+                <h5 class="card-header">Card title</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
           </div>
+          <div class="d-lg-none">
+            <div class="row p-5">
+              <p class="col-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia inventore nihil tempore dolorem doloremque facere blanditiis eaque ea error tempora ad, quod maxime laudantium. Ipsam exercitationem quidem deleniti corporis.
+              </p>
+              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="image-fluid col-4">
+            </div>
+            <div class="row p-5">
+              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="image-fluid col-4">
+              <p class="col-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia inventore nihil tempore dolorem doloremque facere blanditiis eaque ea error tempora ad, quod maxime laudantium. Ipsam exercitationem quidem deleniti corporis.
+              </p>
+            </div>
+            <div class="row p-5">
+              <p class="col-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia inventore nihil tempore dolorem doloremque facere blanditiis eaque ea error tempora ad, quod maxime laudantium. Ipsam exercitationem quidem deleniti corporis.
+              </p>
+              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="image-fluid col-4">
+            </div>
+          </div>
           <hr class="mb-5 mt-5">
-          <div>
+          <div class="formdiv">
             <form action="/api/send-message" method="post">
               <h4>Küldjön Üzenetet</h6>
               
@@ -88,7 +110,7 @@
             
               <div class=" mb-3">
                 <label for="uzenet" class="form-label"> Üzenet:</label>
-                <textarea class="form-control" name="uzenet" id="uzenet" style="height: 100px"></textarea>
+                <textarea class="form-control" name="uzenet" id="uzenet"></textarea>
               </div>
 
               <button type="submit" class="btn">Küldés</button>
