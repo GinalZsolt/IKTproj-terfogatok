@@ -28,7 +28,7 @@ namespace Pitagorator
             p_box.Height = 250;
             p_box.Width = 400;
             p_box.Left = (this.Width / 2)-100;
-            p_box.SizeMode = PictureBoxSizeMode.StretchImage;
+            p_box.SizeMode = PictureBoxSizeMode.Zoom;
             this.Controls.Add(p_box);
             imageandinputs();
             GroupBox g_box = new GroupBox()
@@ -37,7 +37,7 @@ namespace Pitagorator
                 Top = 20,
                 Left = 20,
                 Width = 200,
-                Height = 232
+                Height = Controls.Find("szamolo_btn", true)[0].Top + Controls.Find("szamolo_btn", true)[0].Height
             };
             Controls.Add(g_box);
         }
@@ -92,7 +92,7 @@ namespace Pitagorator
 
         private void rombuszOldal()
         {
-            p_box.Image = Properties.Resources.rombusz;
+            p_box.Image = Properties.Resources.adat_rombusz;
             AInputdesign(60);
             atloInputDesign("e", 120);
             atloInputDesign("f", 180);
