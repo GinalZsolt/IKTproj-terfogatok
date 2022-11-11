@@ -62,6 +62,7 @@
     <Compile Include="Szamolo.Designer.cs">
       <DependentUpon>Szamolo.cs</DependentUpon>
     </Compile>
+    <Compile Include="welcomeFormDesign.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

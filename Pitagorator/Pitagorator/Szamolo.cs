@@ -191,7 +191,7 @@ namespace Pitagorator
         private void haromszogOldal()
         {
             p_box.Image = Properties.Resources.adat_haromszog;
-            AInputdesign(60);
+            CalcInpGen.AInputdesign(60, this.Controls);
             BInputdesign(120);
             CInputdesign(180);
             this.Controls.Add(GenerateElements.szamolBtnGen(240));
@@ -209,13 +209,6 @@ namespace Pitagorator
             this.Controls.Add(GenerateElements.labelOldalGen("b", indulo, "oldal"));
             this.Controls.Add(GenerateElements.textboxGen("b", indulo+20));
             this.Controls.Add(GenerateElements.cmLabelGen(90, 140));
-        }
-
-        private void AInputdesign(int indulo)
-        {
-            this.Controls.Add(GenerateElements.labelOldalGen("a", indulo, "oldal"));
-            this.Controls.Add(GenerateElements.textboxGen("a", indulo+20));
-            this.Controls.Add(GenerateElements.cmLabelGen(90, 80));
         }
     }
 }

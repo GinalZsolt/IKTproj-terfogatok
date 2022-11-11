@@ -26,8 +26,7 @@ namespace Pitagorator
 
         private void basicDesign()
         {
-            this.Text = "Pitagorator";
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            thisFormSet();
             Label welc_Lbl = new Label() 
             {
                 Left = 150,
@@ -58,18 +57,28 @@ namespace Pitagorator
                 Image = Properties.Resources.haromszog,
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
-            start_btn.Text = "Számol";
-            start_btn.Top = p_box.Top + p_box.Height + 35;
-            start_btn.Left = this.Width / 2 - 40;
-            start_btn.Height = 20;
-            start_btn.Width = 80;
+            startBtnSet();
             label1.Text = "Háromszög";
             label1.Visible = false;
-            this.Controls.Add(start_btn);
+            this.Controls.Add(welcomeFormDesign.btnSetProp(Controls.Find("start_btn", true)[0] as Button, Controls.Find("p_box", true)[0] as PictureBox, this.Width));
             this.Controls.Add(p_box);
             this.Controls.Add(welc_Cbox);
         }
 
+        private void startBtnSet()
+        {
+            start_btn.Text = $"Számol {p_box.Top + p_box.Height + 35}";
+            start_btn.Top = p_box.Top + p_box.Height + 35; 
+            start_btn.Left = this.Width / 2 - 40;
+            start_btn.Height = 20;
+            start_btn.Width = 80;
+        }
+
+        private void thisFormSet()
+        {
+            this.Text = "Pitagorator";
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
 
         private void welc_CboxChange(object sender, EventArgs e)
         {
