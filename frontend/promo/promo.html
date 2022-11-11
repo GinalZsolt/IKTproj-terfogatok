@@ -9,10 +9,9 @@
     <meta name="title" content="Pitagorátor">
     <meta name="keywords" content="Pitagorátor,alakzat,test,síkidom,matematika,KoZiGi,Letöltés">
     <meta name="description" content="Pitagorátor Az alakzatszámító bemutató oldala, letöltéssel">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/promo.css">
-    <link rel="stylesheet" href="../assets/media-query.css">
     <title>Pitagorátor</title>
 </head>
 <body>
@@ -41,47 +40,49 @@
         </header>
         <main>
           <h4>Információk a programról</h4>
-          <div class="row lgdisplay mt-4">
-            <div class="col-lg-4">
-              <div class="card " style="width: 18rem;">
-                <img src="" class="card-img-top" alt="">
-                <h5 class="card-header">Card title</h5>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class=" d-none d-lg-block mt-4"> <!-- nagy méret -->
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card " style="width: 18rem;">
+                  <img src="" class="card-img-top" alt="">
+                  <h5 class="card-header">Card title</h5>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card " style="width: 18rem;">
-                <img src="" class="card-img-top" alt="">
-                <h5 class="card-header">Card title</h5>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col-lg-4">
+                <div class="card " style="width: 18rem;">
+                  <img src="" class="card-img-top" alt="">
+                  <h5 class="card-header">Card title</h5>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card " style="width: 18rem;">
-                <img src="" class="card-img-top" alt="">
-                <h5 class="card-header">Card title</h5>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col-lg-4">
+                <div class="card " style="width: 18rem;">
+                  <img src="" class="card-img-top" alt="">
+                  <h5 class="card-header">Card title</h5>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="mddisplay">
+          <div class="d-none d-md-block d-lg-none"> <!-- közepes méret -->
             <div class="row p-5">
               <p class="col-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia inventore nihil tempore dolorem doloremque facere blanditiis eaque ea error tempora ad, quod maxime laudantium. Ipsam exercitationem quidem deleniti corporis.
               </p>
-              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="image-fluid col-4">
+              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="img-thumbnail image-fluid col-4">
             </div>
             <div class="row p-5">
-              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="image-fluid col-4">
+              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="img-thumbnail image-fluid col-4">
               <p class="col-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia inventore nihil tempore dolorem doloremque facere blanditiis eaque ea error tempora ad, quod maxime laudantium. Ipsam exercitationem quidem deleniti corporis.
               </p>
@@ -90,41 +91,59 @@
               <p class="col-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia inventore nihil tempore dolorem doloremque facere blanditiis eaque ea error tempora ad, quod maxime laudantium. Ipsam exercitationem quidem deleniti corporis.
               </p>
-              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="image-fluid col-4">
+              <img src="../assets/300x200.png" alt="dummy" title="dummy" class="img-thumbnail image-fluid col-4">
             </div>
           </div>
-          <div class="smdisplay">
+          <div class="d-sm-block d-md-none"> <!-- kis méret -->
+            <div>
+              <img src="../assets/300x200.png" alt="igen" title="igen" class="w-100 rounded mx-auto">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fuga fugit perferendis, voluptates odit obcaecati error fugiat ducimus nam cupiditate maiores necessitatibus unde expedita. Rerum id nobis doloremque vero et?</p>
+            </div>
+            <hr class="mx-auto w-80">
+          <div>
+            <img src="../assets/300x200.png" alt="igen" title="igen" class="w-100 rounded mx-auto">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fuga fugit perferendis, voluptates odit obcaecati error fugiat ducimus nam cupiditate maiores necessitatibus unde expedita. Rerum id nobis doloremque vero et?</p>
           </div>
+          </div>
+          <hr class="mx-auto w-80">
+        <div>
+          <img src="../assets/300x200.png" alt="igen" title="igen" class="w-100 rounded mx-auto">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fuga fugit perferendis, voluptates odit obcaecati error fugiat ducimus nam cupiditate maiores necessitatibus unde expedita. Rerum id nobis doloremque vero et?</p>
+        </div>
+        </div>
+        
           <hr class="mb-5 mt-5">
           <div class="formdiv">
             <form action="/api/send-message" method="post">
-              <h4>Küldjön Üzenetet</h6>
+                <h4>Küldjön Üzenetet</h6>
+                
+                <div class="mb-3">
+                  <label for="name" class="form-label">Név:</label>
+                  <input type="text" class="form-control" name="name" id="name">
+                </div>
+
+                <div class="mb-3">
+                  <label for="mail" class="form-label">Email cím:</label>
+                  <input type="email" class="form-control" name="mail" id="mail" >
+                </div>
               
-              <div class="mb-3">
-                <label for="name" class="form-label">Név:</label>
-                <input type="text" class="form-control" name="name" id="name">
-              </div>
+                <div class=" mb-3">
+                  <label for="uzenet" class="form-label"> Üzenet:</label>
+                  <textarea class="form-control" name="uzenet" id="uzenet"></textarea>
+                </div>
 
-              <div class="mb-3">
-                <label for="mail" class="form-label">Email cím:</label>
-                <input type="email" class="form-control" name="mail" id="mail" >
-              </div>
-            
-              <div class=" mb-3">
-                <label for="uzenet" class="form-label"> Üzenet:</label>
-                <textarea class="form-control" name="uzenet" id="uzenet"></textarea>
-              </div>
+                <button type="submit" class="btn">Küldés</button>
 
-              <button type="submit" class="btn">Küldés</button>
+              </form>
+            </div>
+        </div>
 
-            </form>
-          </div>
         </main>
         <footer>
           Készítette: KoZiGi <br>
           2022
         </footer>
     </div>
+    <script src="../assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>
