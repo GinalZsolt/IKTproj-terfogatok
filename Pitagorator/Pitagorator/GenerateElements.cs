@@ -41,7 +41,7 @@ namespace Pitagorator
             };
         }
 
-        public static Label cmLabelGen(int left, int top)
+        public static Label cmLabelGen(int left, int top)   //haven't used it, but in case its necesary
         {
             return new Label()
             {

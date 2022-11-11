@@ -85,130 +85,95 @@ namespace Pitagorator
         private void teglalapOldal()
         {
             p_box.Image = Properties.Resources.adat_teglalap;
-            AInputdesign(60);
-            BInputdesign(120);
+            CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(120, "b", this.Controls, "oldal");
             Controls.Add(GenerateElements.szamolBtnGen(180));
         }
 
         private void rombuszOldal()
         {
             p_box.Image = Properties.Resources.adat_rombusz;
-            AInputdesign(60);
-            atloInputDesign("e", 120);
-            atloInputDesign("f", 180);
+            CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(120, "e", this.Controls, "atlto");
+            CalcInpGen.Inputdesign(180, "f", this.Controls, "atlo");
             Controls.Add(GenerateElements.szamolBtnGen(240));
         }
 
         private void korOldal()
         {
             p_box.Image = Properties.Resources.adat_kor;
-            rInputDesign(60);
+            CalcInpGen.Inputdesign(60, "r", this.Controls, "sugar");
             Controls.Add(GenerateElements.szamolBtnGen(120));
         }
 
         private void trapezOldal()
         {
             p_box.Image = Properties.Resources.adat_hurtrapez;
-            AInputdesign(60);
-            BInputdesign(120);
-            CInputdesign(180);
-            mInputDesign(240, "m", "magassag");
+            CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(120, "b", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(180, "c", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(240, "m", this.Controls, "magassag");
             Controls.Add(GenerateElements.szamolBtnGen(300));
         }
 
         private void gulaOldal()
         {
             p_box.Image = Properties.Resources.adat_gula;
-            mInputDesign(60, "M", "testmagassag");
-            mInputDesign(120, "m", "magassag");
-            AInputdesign(180);
-            BInputdesign(240);
+            CalcInpGen.Inputdesign(60, "M", this.Controls, "testmagassag");
+            CalcInpGen.Inputdesign(120, "m", this.Controls, "magassag");
+            CalcInpGen.Inputdesign(180, "a", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(240, "b", this.Controls, "oldal");
             Controls.Add(GenerateElements.szamolBtnGen(300));
         }
 
         private void gombOldal()
         {
             p_box.Image = Properties.Resources.adat_gomb;
-            rInputDesign(60);
+            CalcInpGen.Inputdesign(60, "r", this.Controls, "sugar");
             Controls.Add(GenerateElements.szamolBtnGen(120));
         }
 
         private void deltoidOldal()
         {
             p_box.Image = Properties.Resources.adat_deltoid;
-            AInputdesign(60);
-            BInputdesign(120);
-            atloInputDesign("e", 180);
-            atloInputDesign("f", 240);
+            CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(120, "b", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(180, "e", this.Controls, "atlto" );
+            CalcInpGen.Inputdesign(240, "f", this.Controls, "atlo");
             Controls.Add(GenerateElements.szamolBtnGen(300));
-        }
-
-        private void atloInputDesign(string neve, int indulo)
-        {
-            this.Controls.Add(GenerateElements.labelOldalGen(neve, indulo, "atlo"));
-            this.Controls.Add(GenerateElements.textboxGen(neve, indulo + 20));
-            this.Controls.Add(GenerateElements.cmLabelGen(90, 200));
         }
 
         private void negyzetOldal()
         {
             p_box.Image = Properties.Resources.adat_negyzet;
-            AInputdesign(60);
+            CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
             Controls.Add(GenerateElements.szamolBtnGen(120));
         }
 
         private void paralelogrammaOldal()
         {
             p_box.Image = Properties.Resources.adat_paralelogramma;
-            AInputdesign(60);
-            BInputdesign(120);
-            mInputDesign(180, "m", "magassag");
+            CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(120,"b", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(180, "m", this.Controls, "magassag");
             Controls.Add(GenerateElements.szamolBtnGen(240));
         }
 
         private void hengerOldal()
         {
             p_box.Image = Properties.Resources.adat_henger;
-            rInputDesign(60);
-            mInputDesign(120,"m","magassag");
+            CalcInpGen.Inputdesign(60,"r", this.Controls, "sugar");
+            CalcInpGen.Inputdesign(120, "m", this.Controls, "magassag");
             this.Controls.Add(GenerateElements.szamolBtnGen(180));
-        }
-
-        private void mInputDesign(int indulo,string m, string magassag)
-        {
-            this.Controls.Add(GenerateElements.labelOldalGen(m, indulo, magassag));
-            this.Controls.Add(GenerateElements.textboxGen(m, indulo + 20));
-            this.Controls.Add(GenerateElements.cmLabelGen(90, 200));
-        }
-
-        private void rInputDesign(int indulo)
-        {
-            this.Controls.Add(GenerateElements.labelOldalGen("r", indulo, "sugara"));
-            this.Controls.Add(GenerateElements.textboxGen("r", indulo + 20));
-            this.Controls.Add(GenerateElements.cmLabelGen(90, 200));
         }
 
         private void haromszogOldal()
         {
             p_box.Image = Properties.Resources.adat_haromszog;
-            CalcInpGen.AInputdesign(60, this.Controls);
-            BInputdesign(120);
-            CInputdesign(180);
+            CalcInpGen.Inputdesign(60, "a", this.Controls,"oldal");
+            CalcInpGen.Inputdesign(120,"b", this.Controls, "oldal");
+            CalcInpGen.Inputdesign(180, "c", this.Controls, "oldal");
             this.Controls.Add(GenerateElements.szamolBtnGen(240));
-        }
-
-        private void CInputdesign(int indulo)
-        {
-            this.Controls.Add(GenerateElements.labelOldalGen("c", indulo, "oldal"));
-            this.Controls.Add(GenerateElements.textboxGen("c", indulo+20));
-            this.Controls.Add(GenerateElements.cmLabelGen(90, 200));
-        }
-
-        private void BInputdesign(int indulo)
-        {
-            this.Controls.Add(GenerateElements.labelOldalGen("b", indulo, "oldal"));
-            this.Controls.Add(GenerateElements.textboxGen("b", indulo+20));
-            this.Controls.Add(GenerateElements.cmLabelGen(90, 140));
-        }
+        } 
     }
 }

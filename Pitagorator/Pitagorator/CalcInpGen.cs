@@ -9,11 +9,10 @@ namespace Pitagorator
 {
     class CalcInpGen
     {
-        public static void AInputdesign(int indulo, Control.ControlCollection Controls)
+        public static void Inputdesign(int indulo, string jelolo, Control.ControlCollection Controls, string jelentes)
         {
-            Controls.Add(GenerateElements.labelOldalGen("a", indulo, "oldal"));
-            Controls.Add(GenerateElements.textboxGen("a", indulo + 20));
-            Controls.Add(GenerateElements.cmLabelGen(90, 80));
+            Controls.Add(GenerateElements.labelOldalGen(jelolo, indulo, jelentes));
+            Controls.Add(GenerateElements.textboxGen(jelolo, indulo + 20));
         }
     }
 }
