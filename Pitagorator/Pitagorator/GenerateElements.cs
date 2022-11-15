@@ -14,7 +14,7 @@ namespace Pitagorator
     class GenerateElements
     {
         
-        public static Label labelOldalGen(string oldalnev, int top, string tulajnev)        //szamolo fomr
+        public static Label labelOldalGen(string oldalnev, int top, string tulajnev)        //szamolo form label generator to an input
         {
             return new Label()
             {
@@ -28,7 +28,7 @@ namespace Pitagorator
             };
         }
 
-        public static TextBox textboxGen(string oldalnev, int top)
+        public static TextBox textboxGen(string oldalnev, int top)      //szamolo form textbox input generator
         {
             return new TextBox()
             {
@@ -54,7 +54,7 @@ namespace Pitagorator
             };
         }
 
-        public static Button szamolBtnGen(int top)
+        public static Button szamolBtnGen(int top)                  // szamolo form szamolo button generator
         {
             return new Button()
             {

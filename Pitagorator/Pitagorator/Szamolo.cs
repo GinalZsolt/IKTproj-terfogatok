@@ -73,7 +73,7 @@ namespace Pitagorator
             }
         }
 
-        private void teglalapOldal()
+        private void teglalapOldal()                        //teglalap page generator
         {
             p_box.Image = Properties.Resources.adat_teglalap;
             CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
@@ -83,21 +83,21 @@ namespace Pitagorator
 
         private void rombuszOldal()
         {
-            p_box.Image = Properties.Resources.adat_rombusz;
+            p_box.Image = Properties.Resources.adat_rombusz;        //rombusz page generator
             CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
             CalcInpGen.Inputdesign(120, "e", this.Controls, "atlto");
             CalcInpGen.Inputdesign(180, "f", this.Controls, "atlo");
             Controls.Add(GenerateElements.szamolBtnGen(240));
         }
 
-        private void korOldal()
+        private void korOldal()         //kor page generator
         {
             p_box.Image = Properties.Resources.adat_kor;
             CalcInpGen.Inputdesign(60, "r", this.Controls, "sugar");
             Controls.Add(GenerateElements.szamolBtnGen(120));
         }
 
-        private void trapezOldal()
+        private void trapezOldal()              //trapez page generator
         {
             p_box.Image = Properties.Resources.adat_hurtrapez;
             CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
@@ -107,7 +107,7 @@ namespace Pitagorator
             Controls.Add(GenerateElements.szamolBtnGen(300));
         }
 
-        private void gulaOldal()
+        private void gulaOldal()    //gula page generator
         {
             p_box.Image = Properties.Resources.adat_gula;
             CalcInpGen.Inputdesign(60, "M", this.Controls, "testmagassag");
@@ -117,14 +117,14 @@ namespace Pitagorator
             Controls.Add(GenerateElements.szamolBtnGen(300));
         }
 
-        private void gombOldal()
+        private void gombOldal()        //gomb page generator
         {
             p_box.Image = Properties.Resources.adat_gomb;
             CalcInpGen.Inputdesign(60, "r", this.Controls, "sugar");
             Controls.Add(GenerateElements.szamolBtnGen(120));
         }
 
-        private void deltoidOldal()
+        private void deltoidOldal()     //deltoid page generator
         {
             p_box.Image = Properties.Resources.adat_deltoid;
             CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
@@ -134,14 +134,14 @@ namespace Pitagorator
             Controls.Add(GenerateElements.szamolBtnGen(300));
         }
 
-        private void negyzetOldal()
+        private void negyzetOldal()             //negyzet page generator
         {
             p_box.Image = Properties.Resources.adat_negyzet;
             CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
             Controls.Add(GenerateElements.szamolBtnGen(120));
         }
 
-        private void paralelogrammaOldal()
+        private void paralelogrammaOldal()          //paralelogramma page generator
         {
             p_box.Image = Properties.Resources.adat_paralelogramma;
             CalcInpGen.Inputdesign(60, "a", this.Controls, "oldal");
@@ -150,7 +150,7 @@ namespace Pitagorator
             Controls.Add(GenerateElements.szamolBtnGen(240));
         }
 
-        private void hengerOldal()
+        private void hengerOldal()              //henger page generator
         {
             p_box.Image = Properties.Resources.adat_henger;
             CalcInpGen.Inputdesign(60,"r", this.Controls, "sugar");
@@ -158,7 +158,7 @@ namespace Pitagorator
             this.Controls.Add(GenerateElements.szamolBtnGen(180));
         }
 
-        private void haromszogOldal()
+        private void haromszogOldal()               //haromszog page generator
         {
             p_box.Image = Properties.Resources.adat_haromszog;
             CalcInpGen.Inputdesign(60, "a", this.Controls,"oldal");
