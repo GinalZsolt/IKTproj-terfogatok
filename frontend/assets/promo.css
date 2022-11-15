@@ -1,0 +1,71 @@
+.container{
+    margin:0;
+    padding:0;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+
+}
+.navbar,nav{
+    width: 100%;
+    background-color: #71ff63;
+    color:black;
+    font-weight: 600;
+}
+h1{
+    line-height: 100%;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    
+}
+#cimdiv{
+    color: white;
+}
+header{
+    background-color: #0049b6;
+    height: 200px;
+    padding: 5%;
+    
+    margin :0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    padding: 12px;
+}
+.card{
+    margin:auto;
+}
+.jobbracsik{
+    border-right: 2px solid black;
+    padding-right: 5px;
+}
+footer{
+    margin-top:auto;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+}
+form{
+    width: 80%;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    padding: 10px;
+    margin:auto;
+}
+.btn{
+    background-color: #71ff63;
+    color: black;
+}
+.dl-btn{
+    width: 70%;
+    
+}
+.form-div{
+    width: 75%;
+}
+.card-header{
+    background-color: #71ff63;
+}
