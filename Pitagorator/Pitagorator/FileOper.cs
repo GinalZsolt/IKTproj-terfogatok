@@ -10,7 +10,7 @@ namespace Pitagorator
 {
     class FileOper
     {
-        public static List<string> alakzatNevek(string filename)
+        public static List<string> alakzatNevek(string filename)            //file operations
         {
             List<string> nevek = new List<string>();
             StreamReader read = new StreamReader(filename, Encoding.Default);
