@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace Pitagorator
 {
-    class welcomeFormDesign
+    class FormElementsDesign
     {
         static List<string> alakzatnevek = FileOper.alakzatNevek("alakzatok.txt");      //reads and stores the alakzatok.txt 
 
@@ -61,6 +61,27 @@ namespace Pitagorator
                 Name = "welc_lbl"
             };
             Controls.Add(welc_lbl);
+        }
+
+        public static void szamoloForm_set_prop(Form szamoloForm)       //szamolo form property set
+        {
+            szamoloForm.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        public static void welcomeForm_set_prop(Form welcomeForm)      //this method sets the welcome form's basic properties
+        {
+            welcomeForm.Text = "Pitagorator";
+            welcomeForm.FormBorderStyle = FormBorderStyle.FixedSingle;
+            welcomeForm.Name = "welc_form";
+        }
+
+        public static void szamoloForm_pbox_set_prop(PictureBox p_box, Form szamolo)
+        {
+            p_box.Top = 60;
+            p_box.Height = 250;
+            p_box.Width = 400;
+            p_box.Left = (szamolo.Width / 2) - 100;
+            p_box.SizeMode = PictureBoxSizeMode.Zoom;
         }
     }
 }

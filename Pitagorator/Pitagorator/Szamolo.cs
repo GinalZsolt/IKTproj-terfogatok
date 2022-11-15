@@ -25,12 +25,8 @@ namespace Pitagorator
 
         private void Szamolo_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            p_box.Top = 60;
-            p_box.Height = 250;
-            p_box.Width = 400;
-            p_box.Left = (this.Width / 2)-100;
-            p_box.SizeMode = PictureBoxSizeMode.Zoom;
+            FormElementsDesign.szamoloForm_set_prop(this);
+            FormElementsDesign.szamoloForm_pbox_set_prop(Controls.Find("p_box", true)[0] as PictureBox, this);
             this.Controls.Add(p_box);
             imageandinputs();
             GroupBox g_box = new GroupBox()

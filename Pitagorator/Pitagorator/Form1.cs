@@ -24,21 +24,14 @@ namespace Pitagorator
 
         private void basicDesign()      //this method creates the welcome form
         {
-            thisFormSet();
-            welcomeFormDesign.label_set_prop(this.Controls);    //creates the welcome label 
+            FormElementsDesign.welcomeForm_set_prop(this);
+            FormElementsDesign.label_set_prop(this.Controls);    //creates the welcome label 
             label1.Text = "Háromszög";
             label1.Visible = false;
-            welcomeFormDesign.combobox_set_prop(this.Controls.Find("welc_lbl", true)[0] as Label, this.Width, this.Controls, p_box);    //creates the combobox 
-            welcomeFormDesign.pictrurebox_set_prop(this.Controls.Find("p_box", true)[0] as PictureBox,
+            FormElementsDesign.combobox_set_prop(this.Controls.Find("welc_lbl", true)[0] as Label, this.Width, this.Controls, p_box);    //creates the combobox 
+            FormElementsDesign.pictrurebox_set_prop(this.Controls.Find("p_box", true)[0] as PictureBox,
                 this.Controls.Find("welc_Cbox", true)[0] as ComboBox, this.Width); //creates the picture box
-            welcomeFormDesign.btnSetProp(start_btn, p_box, this.Width); //creates the Szamolo form opener button
-        }
-
-        private void thisFormSet()      //this method sets the welcome form's basic properties
-        {
-            this.Text = "Pitagorator";
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.Name = "welc_form";
+            FormElementsDesign.btnSetProp(start_btn, p_box, this.Width); //creates the Szamolo form opener button
         }
 
         private void start_btn_Click(object sender, EventArgs e)    //this method opens the Szamolo form 
