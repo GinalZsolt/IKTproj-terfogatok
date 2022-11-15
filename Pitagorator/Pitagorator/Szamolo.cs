@@ -13,12 +13,14 @@ namespace Pitagorator
     public partial class Szamolo : Form
     {
         private string Alakzat { get; set; }
+        private Form Welc_Form { get; set; }
 
-        public Szamolo(string alakzat)
+        public Szamolo(string alakzat, Form welc_form)
         {
             InitializeComponent();
             this.Text = $"{alakzat} számoló";
             this.Alakzat = alakzat;
+            this.Welc_Form = welc_form;
         }
 
         private void Szamolo_Load(object sender, EventArgs e)
@@ -46,38 +48,27 @@ namespace Pitagorator
         {
             switch (Alakzat)
             {
-                case "Háromszög":
-                    haromszogOldal();
+                case "Háromszög": haromszogOldal();
                     break;
-                case "Henger":
-                    hengerOldal();
+                case "Henger": hengerOldal();
                     break;
-                case "Paralelogramma":
-                    paralelogrammaOldal();
+                case "Paralelogramma": paralelogrammaOldal();
                     break;
-                case "Négyzet":
-                    negyzetOldal();
+                case "Négyzet": negyzetOldal();
                     break;
-                case "Deltoid":
-                    deltoidOldal();
+                case "Deltoid": deltoidOldal();
                     break;
-                case "Gömb":
-                    gombOldal();
+                case "Gömb": gombOldal();
                     break;
-                case "Gúla":
-                    gulaOldal();
+                case "Gúla": gulaOldal();
                     break;
-                case "Trapéz":
-                    trapezOldal();
+                case "Trapéz": trapezOldal();
                     break;
-                case "Kör":
-                    korOldal();
+                case "Kör": korOldal();
                     break;
-                case "Rombusz":
-                    rombuszOldal();
+                case "Rombusz": rombuszOldal();
                     break;
-                case "Téglalap":
-                    teglalapOldal();
+                case "Téglalap": teglalapOldal();
                     break;
             }
         }
@@ -176,10 +167,10 @@ namespace Pitagorator
             this.Controls.Add(GenerateElements.szamolBtnGen(240));
         }
 
-        //kiszervezés event class-ba
-        private void Szamolo_FormClosing(object sender, FormClosingEventArgs e)
+        private void Szamolo_FormClosing(object sender, FormClosingEventArgs e)     //form closing event open welc form
         {
-            Application.Exit();
+            Welc_Form.Show();
+            this.Hide();
         }
     }
 }

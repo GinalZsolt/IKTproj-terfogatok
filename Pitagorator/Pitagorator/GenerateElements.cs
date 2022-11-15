@@ -14,7 +14,7 @@ namespace Pitagorator
     class GenerateElements
     {
         
-        public static Label labelOldalGen(string oldalnev, int top, string tulajnev)
+        public static Label labelOldalGen(string oldalnev, int top, string tulajnev)        //szamolo fomr
         {
             return new Label()
             {
