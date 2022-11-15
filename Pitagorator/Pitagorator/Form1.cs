@@ -25,7 +25,7 @@ namespace Pitagorator
         private void basicDesign()
         {
             thisFormSet();
-            Label welc_Lbl = new Label() 
+            Label welc_Lbl = new Label()
             {
                 Left = 150,
                 Top = 55,
@@ -34,8 +34,11 @@ namespace Pitagorator
                 Width = 650
             };
             welc_Lbl.Font = new Font(FontFamily.GenericSansSerif, 16, FontStyle.Underline);
-            this.Controls.Add(welc_Lbl);
-            //welc label kiszervezése masik classba
+            Controls.Add(welc_Lbl);
+
+            //label kiszervezés
+            //welcomeFormDesign.label_set_prop(this.Controls);
+
             ComboBox welc_Cbox = new ComboBox();
             PictureBox picturebox_display = this.Controls.Find("p_box", true)[0] as PictureBox;
             label1.Text = "Háromszög";

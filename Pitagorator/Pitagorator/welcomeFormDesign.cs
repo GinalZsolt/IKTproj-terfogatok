@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Pitagorator
 {
@@ -42,5 +43,12 @@ namespace Pitagorator
             welc_Cbox.SelectedIndexChanged += delegate(object sender, EventArgs e) { Events.welc_CboxChange(sender, e, Controls, p_box); };
             Controls.Add(welc_Cbox);
         }
+
+        public static void label_set_prop(Control.ControlCollection Controls)
+        {
+            
+        }
+
+
     }
 }

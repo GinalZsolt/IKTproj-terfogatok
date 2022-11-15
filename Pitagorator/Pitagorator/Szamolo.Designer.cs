@@ -50,6 +50,7 @@ namespace Pitagorator
             this.Controls.Add(this.p_box);
             this.Name = "Szamolo";
             this.Text = "Szamolo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Szamolo_FormClosing);
             this.Load += new System.EventHandler(this.Szamolo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.p_box)).EndInit();
             this.ResumeLayout(false);

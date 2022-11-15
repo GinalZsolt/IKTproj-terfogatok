@@ -174,6 +174,12 @@ namespace Pitagorator
             CalcInpGen.Inputdesign(120,"b", this.Controls, "oldal");
             CalcInpGen.Inputdesign(180, "c", this.Controls, "oldal");
             this.Controls.Add(GenerateElements.szamolBtnGen(240));
-        } 
+        }
+
+        //kiszervezés event class-ba
+        private void Szamolo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
