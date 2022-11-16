@@ -10,9 +10,9 @@ namespace Pitagorator
 {
     class welcomeFormDesign
     {
-        static List<string> alakzatnevek = FileOper.alakzatNevek("alakzatok.txt");
+        static List<string> alakzatnevek = FileOper.alakzatNevek("alakzatok.txt");      //reads and stores the alakzatok.txt 
 
-        public static void btnSetProp(Button start_btn, PictureBox p_box, int formwidth)
+        public static void btnSetProp(Button start_btn, PictureBox p_box, int formwidth)    //welcome form start button property set
         {
             start_btn.Text = $"Számol";
             start_btn.Top = p_box.Top + p_box.Height + 35;
@@ -21,7 +21,7 @@ namespace Pitagorator
             start_btn.Width = 80;
         }
 
-        public static void pictrurebox_set_prop(PictureBox p_box, ComboBox welc_Cbox, int formwidth)
+        public static void pictrurebox_set_prop(PictureBox p_box, ComboBox welc_Cbox, int formwidth)  //welcome form picture box property set
         { 
             p_box.Top = welc_Cbox.Top + 25;
             p_box.Height = 200;
@@ -31,24 +31,36 @@ namespace Pitagorator
             p_box.Image = Properties.Resources.haromszog;
         }
 
-        public static void combobox_set_prop(ComboBox welc_Cbox, Label welc_Lbl, int formwidth, Control.ControlCollection Controls, PictureBox p_box)
+        public static void combobox_set_prop(Label welc_Lbl, int formwidth, Control.ControlCollection Controls, PictureBox p_box) //welcome form combobox
         {
-            welc_Cbox.Left = (formwidth / 2) - 100;
-            welc_Cbox.Width = 200;
-            welc_Cbox.Height = 25;
-            welc_Cbox.Top = welc_Lbl.Top + 50;
-            for (int i = 0; i < alakzatnevek.Count; i++) welc_Cbox.Items.Add(alakzatnevek[i]);
-            welc_Cbox.Text = "Háromszög";
-            welc_Cbox.DropDownStyle = ComboBoxStyle.DropDownList;
-            welc_Cbox.SelectedIndexChanged += delegate(object sender, EventArgs e) { Events.welc_CboxChange(sender, e, Controls, p_box); };
-            Controls.Add(welc_Cbox);
+            ComboBox Cbox = new ComboBox()
+            {
+                Left = (formwidth / 2) - 100,        
+                Width = 200,
+                Height = 25,                            //generates and set basic propertyies 
+                Top = welc_Lbl.Top + 50,                
+                Name= "welc_Cbox"
+            };                          
+            for (int i = 0; i < alakzatnevek.Count; i++) Cbox.Items.Add(alakzatnevek[i]);  //fill the combobox with alakzatnevek's values
+            Cbox.Text = "Háromszög";
+            Cbox.DropDownStyle = ComboBoxStyle.DropDownList;                            //making it unchangeable 
+            Cbox.SelectedIndexChanged += delegate(object sender, EventArgs e) { Events.welc_CboxChange(sender, e, Controls, p_box); };  //adds a onchange event
+            Controls.Add(Cbox);
         }
 
-        public static void label_set_prop(Control.ControlCollection Controls)
+        public static void label_set_prop(Control.ControlCollection Controls)   //welcome form label 
         {
-            
+            Label welc_lbl = new Label()
+            {
+                Left = 150,
+                Top = 55,
+                Text = "Válaszd ki a számítani kívánt testet vagy alakzatot",
+                Height = 30,                                                               //generates and set basic propertyies 
+                Width = 650,
+                Font = new Font(FontFamily.GenericSansSerif, 16, FontStyle.Underline),
+                Name = "welc_lbl"
+            };
+            Controls.Add(welc_lbl);
         }
-
-
     }
 }
