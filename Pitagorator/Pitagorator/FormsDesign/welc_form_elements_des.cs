@@ -63,11 +63,13 @@ namespace Pitagorator
             Controls.Add(welc_lbl);
         }
 
-        public static void welcomeForm_set_prop(Form welcomeForm)      //this method sets the welcome form's basic properties
+        public static void welcomeForm_set_prop(Form welcomeForm, Control.ControlCollection Control)      //this method sets the welcome form's basic properties
         {
+            Events esemeny = new Events();
             welcomeForm.Text = "Pitagorator";
             welcomeForm.FormBorderStyle = FormBorderStyle.FixedSingle;
             welcomeForm.Name = "welc_form";
+            welcomeForm.FormClosing+= delegate (object sender, FormClosingEventArgs e) { esemeny.start_btn_Click(sender, e, Control, welcomeForm); };
         }
     }
 }

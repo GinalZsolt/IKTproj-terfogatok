@@ -14,6 +14,8 @@ namespace Pitagorator
 
         }
 
+        //WELC FORM EVENTS-----------------------
+
         public static void welc_CboxChange(object sender, EventArgs e, Control.ControlCollection Controlls, PictureBox p_box)   //welcome form cbox change event
         {
             Label label1 = Controlls.Find("label1", true)[0] as Label;
@@ -47,6 +49,14 @@ namespace Pitagorator
             }
         }
 
+        public void Szamolo_FormClosing(object sender, FormClosingEventArgs e, Form Welc_Form, Form Szamolo_Form)     //form closing event open welc form
+        {
+            Welc_Form.Show();
+            Szamolo_Form.Hide();
+        }
+
+        //SZAMOLO FORM EVENTS---------------------------------------------
+
         public void imageandinputs(string alakzat, Control.ControlCollection control)
         {
             page_gen page = new page_gen(control.Find("p_box",true)[0] as PictureBox, control);
@@ -75,6 +85,16 @@ namespace Pitagorator
                 case "Téglalap": page.teglalapOldal();
                     break;
             }
+        }
+
+        public void start_btn_Click(object sender, EventArgs e, Control.ControlCollection Control, Form welc_form)    //this method opens the Szamolo form 
+        {
+            Label label1 = Control.Find("label1", true)[0] as Label;
+            label1.Visible = true;
+            Szamolo szamolo = new Szamolo(label1.Text, welc_form);
+            szamolo.Show();
+            label1.Visible = false;
+            welc_form.Hide();
         }
     }
 }

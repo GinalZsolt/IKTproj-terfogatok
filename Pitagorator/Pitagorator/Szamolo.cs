@@ -17,10 +17,12 @@ namespace Pitagorator
 
         public Szamolo(string alakzat, Form welc_form)
         {
+            Events esemenyek = new Events();
             InitializeComponent();
             this.Text = $"{alakzat} számoló";
             this.Alakzat = alakzat;
             this.Welc_Form = welc_form;
+            this.FormClosing+= delegate (object sender, FormClosingEventArgs e) { esemenyek.Szamolo_FormClosing(sender, e, welc_form, this); };
         }
 
         private void Szamolo_Load(object sender, EventArgs e)
@@ -32,12 +34,6 @@ namespace Pitagorator
             esemeny.imageandinputs(Alakzat, this.Controls);
             szamolo_form_elements_des.szamoloForm_gbox_create(this.Controls);
             page_gen page = new page_gen(p_box, this.Controls);
-        }
-
-        private void Szamolo_FormClosing(object sender, FormClosingEventArgs e)     //form closing event open welc form
-        {
-            Welc_Form.Show();
-            this.Hide();
         }
     }
 }
