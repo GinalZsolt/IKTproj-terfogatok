@@ -31,3 +31,14 @@ D:\git_kd\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Debug\Pitagorator.exe.c
 D:\git_kd\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Debug\Pitagorator.exe
 D:\git_kd\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Debug\Pitagorator.pdb
 D:\git_kd\terfogat\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Szamolo.resources
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Debug\Pitagorator.exe.config
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Debug\Pitagorator.exe
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Debug\Pitagorator.pdb
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.AssemblyReference.cache
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Form1.resources
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Properties.Resources.resources
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.Szamolo.resources
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.GenerateResource.cache
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.csproj.CoreCompileInputs.cache
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.exe
+C:\Users\ginalzsolt\Desktop\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Debug\Pitagorator.pdb
