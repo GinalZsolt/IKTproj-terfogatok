@@ -2,6 +2,11 @@ require('dotenv').config();
 let routes = require('express').Router();
 const mysql = require('mysql');
 const crypto = require('crypto');
+
+
+
+
+
 let pool = mysql.createPool({
     host:process.env.DBHOST,
     password:process.env.DBPASS,
@@ -35,18 +40,46 @@ routes.post('/login', (req,res)=>{
         pool.query('select * from users where username=? and passwd=?', [formdata.username, crypto.createHash('sha256').update(formdata.password).digest('hex')], (err,data)=>{
             if (err) res.status(500).send(err);
             else {
-                if (data.length==1) res.redirect(200, '/admin');
+                if (data.length==1) {
+                    res.redirect(200, '/admin');
+                }
                 else res.redirect(403, '/admin/login');
             }
         })
     }
 })
-routes.delete('/delete-ticket/:id', (req,res)=>{
+routes.delete('/delete-ticket/:id', auth(),(req,res)=>{
     pool.query('delete from tickets where id=?', [req.params.id], (err,data)=>{
         if (err) res.status(500).send(err.message);
         else res.status(200).send(data);
     })
 })
+
+function auth(){
+    return (req,res,next)=>{
+        if (req.headers.authorization==undefined||req.headers.authorization==null){
+            res.status(401).send('Nincs token!');
+        }
+        else{
+            let token = req.headers.authorization.split('Basic')[1].toString();
+            console.log(token)
+            pool.query(`select * from users where token='${token}'`, (err,data)=>{
+                if (err) res.status(500).send(err.message);
+                else if (data.length==0){
+                    res.status(401).send('Hibás token!')
+                }
+                else if (data[0]==req.headers.authorization.split('Basic')[1]){
+                    next();
+                }
+                else res.status(401).send('Hibás token!');
+            })
+        }
+    }
+}
+
+
+
+
 function ValidData(data, fieldnames){
     try{Object.values(data);} 
     catch (err){return false;}
