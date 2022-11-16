@@ -22,7 +22,6 @@ routes.get('/tickets', (req,res)=>{
     })
 })
 routes.post('/new-ticket', (req,res)=>{
-    console.log(req.body)
     if (!ValidData(req.body, ['name', 'email', 'message'])) res.status(500).send('Hibás bemeneti adatok!');
     else{
         let formdata = req.body;
@@ -33,17 +32,17 @@ routes.post('/new-ticket', (req,res)=>{
     }
 })
 routes.post('/login', (req,res)=>{
-    console.log(req.body);
-    if (!ValidData(req.body, ['username', 'password'])) res.status(500).send('Hibás bemeneti adatok');
+    if (!ValidData(req.body, ['username', 'password'])) res.status(403).send('Hibás bemeneti adatok');
     else {
         let formdata = req.body;
         pool.query('select * from users where username=? and passwd=?', [formdata.username, crypto.createHash('sha256').update(formdata.password).digest('hex')], (err,data)=>{
             if (err) res.status(500).send(err);
             else {
                 if (data.length==1) {
-                    res.redirect(200, '/admin');
+                    req.session.isLoggedin = true;
+                    res.redirect('/admin');
                 }
-                else res.redirect(403, '/admin/login');
+                else res.redirect('/admin/login');
             }
         })
     }
