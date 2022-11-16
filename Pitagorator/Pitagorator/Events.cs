@@ -71,13 +71,13 @@ namespace Pitagorator
             Calculation.Test testCal = new Calculation.Test();
             switch (alakzat)
             {
-                case "Háromszög": sikidomCal.Haromszog(Convert.ToDouble(Control.Find("a_value",true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text),); break;
-                case "Henger": page.hengerOldal(); break;
+                case "Háromszög": sikidomCal.Haromszog(Convert.ToDouble(Control.Find("a_value",true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text)); break;
+                case "Henger": testCal.Henger(Convert.ToDouble(Control.Find("r_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
                 case "Paralelogramma": sikidomCal.Paralelogramma(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
                 case "Négyzet": sikidomCal.Negyzet(Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;
                 case "Deltoid": sikidomCal.Deltoid(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text), Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;
                 case "Gömb": testCal.Gomb(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
-                case "Gúla": page.gulaOldal(); break;
+                case "Gúla": testCal.Gula(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text), Convert.ToDouble(Control.Find("M_value", true)[0].Text)); break;
                 case "Trapéz": sikidomCal.Trapez(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
                 case "Kör": sikidomCal.Kor(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
                 case "Rombusz": sikidomCal.Rombusz(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text),Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;

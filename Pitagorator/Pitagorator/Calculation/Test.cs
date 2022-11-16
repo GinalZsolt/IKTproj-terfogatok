@@ -21,5 +21,17 @@ namespace Pitagorator.Calculation
             this.Terfogat = Math.PI*4*r*r*r/3;
             this.Felulet =4*Math.PI*r*r ;
         }
+
+        public void Henger(double r, double m)
+        {
+            this.Terfogat = r*Math.PI*r*m;
+            this.Felulet = 2*Math.PI*r*(r+m);
+        }
+
+        public void Gula(double a, double b, double m, double M)
+        {
+            this.Terfogat = 1/3*a*a*M;
+            this.Felulet = a*a+4*a*m/2;
+        }
     }
 }
