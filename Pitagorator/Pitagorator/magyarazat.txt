@@ -1,0 +1,3 @@
+Form1.cs, Szamaolo.cs: kezdõ és számoló form 
+FileOper.cs: file mûveletek
+Events.cs: Minden esemény a programban 

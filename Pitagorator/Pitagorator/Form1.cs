@@ -11,18 +11,14 @@ using System.Windows.Forms;
 namespace Pitagorator
 {
     public partial class Form1 : Form
-    {
+    { 
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            basicDesign();
-        }
-
-        private void basicDesign()      //this method creates the welcome form
+        private void Form1_Load(object sender, EventArgs e)     //this method creates the entire welcome form
         {
             welc_form_elements_des.welcomeForm_set_prop(this, this.Controls);
             welc_form_elements_des.label_set_prop(this.Controls);    //creates the welcome label 
