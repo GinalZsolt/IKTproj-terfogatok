@@ -52,7 +52,7 @@ namespace Pitagorator
             this.start_btn.Text = "button1";
             this.start_btn.UseVisualStyleBackColor = true;
             Events esemenyekk = new Events();
-            this.start_btn.Click += new System.EventHandler(esemenyekk.start_btn_Click(delegate (object sender, System.EventArgs e) { esemenyekk.Szamolo_FormClosing(sender, e, this.Controls, this); }));
+            this.start_btn.Click += new System.EventHandler(delegate (object sender, System.EventArgs e) { esemenyekk.start_btn_Click(sender, e, this.Controls, this); });
             // 
             // label1
             // 

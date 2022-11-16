@@ -49,10 +49,14 @@ namespace Pitagorator
             }
         }
 
-        public void Szamolo_FormClosing(object sender, FormClosingEventArgs e, Form Welc_Form, Form Szamolo_Form)     //form closing event open welc form
+        public void start_btn_Click(object sender, EventArgs e, Control.ControlCollection Control, Form welc_form)    //this method opens the Szamolo form 
         {
-            Welc_Form.Show();
-            Szamolo_Form.Hide();
+            Label label1 = Control.Find("label1", true)[0] as Label;
+            label1.Visible = true;
+            Szamolo szamolo = new Szamolo(label1.Text, welc_form);
+            szamolo.Show();
+            label1.Visible = false;
+            welc_form.Hide();
         }
 
         //SZAMOLO FORM EVENTS---------------------------------------------
@@ -87,14 +91,10 @@ namespace Pitagorator
             }
         }
 
-        public void start_btn_Click(object sender, EventArgs e, Control.ControlCollection Control, Form welc_form)    //this method opens the Szamolo form 
+        public void Szamolo_FormClosing(object sender, FormClosingEventArgs e, Form Welc_Form, Form Szamolo_Form)     //form closing event open welc form
         {
-            Label label1 = Control.Find("label1", true)[0] as Label;
-            label1.Visible = true;
-            Szamolo szamolo = new Szamolo(label1.Text, welc_form);
-            szamolo.Show();
-            label1.Visible = false;
-            welc_form.Hide();
+            Welc_Form.Show();
+            Szamolo_Form.Hide();
         }
     }
 }
