@@ -8,3 +8,6 @@ Events.cs: Minden esemény a programban
 
 /FormDesign/szamolo_form_elements_des.cs: szamolo form alakzat nélküli alap elemeinek beállítása
 /FormDesign/welc_form_elements_des.cs: kezdõ form alap elemeinek létrehozása és beállítása
+
+/Calculation/Sikidom: sikidomok számolása
+/Calculation/Test: testek számolása

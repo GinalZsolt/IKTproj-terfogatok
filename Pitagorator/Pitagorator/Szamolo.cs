@@ -34,6 +34,8 @@ namespace Pitagorator
             esemeny.imageandinputs(Alakzat, this.Controls);
             szamolo_form_elements_des.szamoloForm_gbox_create(this.Controls);
             page_gen page = new page_gen(p_box, this.Controls);
+            Button szamoloBtn = this.Controls.Find("szamolo_btn", true)[0] as Button;
+            szamoloBtn.Click += delegate (object senderr, EventArgs ee) { esemeny.szamolo_btn_Click(sender, e, this.Controls, Alakzat); };
         }
     }
 }
