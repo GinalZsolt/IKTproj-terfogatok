@@ -9,6 +9,11 @@ namespace Pitagorator
 {
     class Events
     {
+        public Events()
+        {
+
+        }
+
         public static void welc_CboxChange(object sender, EventArgs e, Control.ControlCollection Controlls, PictureBox p_box)   //welcome form cbox change event
         {
             Label label1 = Controlls.Find("label1", true)[0] as Label;
@@ -38,6 +43,36 @@ namespace Pitagorator
                 case "Rombusz": p_box.Image = Properties.Resources.rombusz;
                     break;
                 case "Téglalap": p_box.Image = Properties.Resources.teglalap;
+                    break;
+            }
+        }
+
+        public void imageandinputs(string alakzat, Control.ControlCollection control)
+        {
+            page_gen page = new page_gen(control.Find("p_box",true)[0] as PictureBox, control);
+            switch (alakzat)
+            {
+                case "Háromszög": page.haromszogOldal();
+                    break;
+                case "Henger": page.hengerOldal();
+                    break;
+                case "Paralelogramma": page.paralelogrammaOldal();
+                    break;
+                case "Négyzet": page.negyzetOldal();
+                    break;
+                case "Deltoid": page.deltoidOldal();
+                    break;
+                case "Gömb": page.gombOldal();
+                    break;
+                case "Gúla": page.gulaOldal();
+                    break;
+                case "Trapéz": page.trapezOldal();
+                    break;
+                case "Kör": page.korOldal();
+                    break;
+                case "Rombusz": page.rombuszOldal();
+                    break;
+                case "Téglalap": page.teglalapOldal();
                     break;
             }
         }

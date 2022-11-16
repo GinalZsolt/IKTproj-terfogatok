@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Pitagorator
 {
-    class GenerateElements
+    class szamolo_form_elements_generate
     {
         
         public static Label labelOldalGen(string oldalnev, int top, string tulajnev)        //szamolo form label generator to an input

@@ -11,8 +11,8 @@ namespace Pitagorator
     {
         public static void Inputdesign(int indulo, string jelolo, Control.ControlCollection Controls, string jelentes)
         {
-            Controls.Add(GenerateElements.labelOldalGen(jelolo, indulo, jelentes));
-            Controls.Add(GenerateElements.textboxGen(jelolo, indulo + 20));
+            Controls.Add(szamolo_form_elements_generate.labelOldalGen(jelolo, indulo, jelentes));
+            Controls.Add(szamolo_form_elements_generate.textboxGen(jelolo, indulo + 20));
         }
     }
 }
