@@ -1,6 +1,6 @@
 app.controller('tableData', function ($scope, $http){
     $scope.rows = [];
-    $http.get('http://localhost:5500/frontend/assets/js/controllers/MOCK_DATA.json').then(r=>{
+    $http.get('http://localhost:8080/api/tickets').then(r=>{
         if (r.data!=null) $scope.rows = r.data;
         console.log($scope.rows)
     });
