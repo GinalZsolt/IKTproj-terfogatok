@@ -1,0 +1,40 @@
+0 és negatív sehol se lehet
+
+Háromszög   
+    1   ha a>b és b>c
+        a<b+c
+    2   ha b>a és b>c
+        b<a+c
+    2   ha c>a és c>b
+        c<b+a
+
+Négyzet -
+
+Gömb -
+
+Henger -
+
+Téglalap -
+
+Kör -
+
+Gúla -
+
+Rombusz 
+    1 ha e>2a
+    2 ha f>2a
+
+Deltoid 
+    1 ha e>2a
+    2 ha f>a+b
+
+Paralelogramma 
+    1 ha b>=m
+
+Trapéz
+    1   ha (a-c/2)>b és (a-c/2)>m
+        (a-c/2)<bm
+    2   ha b>(a-c/2) és b>m
+        b<m+(a-c/2)
+    2   ha m>(a-c/2) és m>b
+        m<b+(a-c/2)
