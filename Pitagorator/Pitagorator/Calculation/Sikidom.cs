@@ -16,53 +16,61 @@ namespace Pitagorator.Calculation
                 
         }
 
-        public void Haromszog(double a, double b, double c)
+        public string Haromszog(double a, double b, double c)
         {
             double s = (a + b + c) / 2;
             this.Terulet = Math.Sqrt(s*(s-a)*(s-b)*(s-c));
             this.Kerulet = a + b + c;
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Paralelogramma(double a, double b,double m)
+        public string Paralelogramma(double a, double b,double m)
         {
             this.Terulet = a * m;
             this.Kerulet = (2 * a) + (2 * b);
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Deltoid(double e, double f, double a, double b)
+        public string Deltoid(double e, double f, double a, double b)
         {
             this.Terulet = (e * f) / 2;
             this.Kerulet=2*(a+b);
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Trapez(double a, double b, double c, double m)
+        public string Trapez(double a, double b, double c, double m)
         {
             this.Terulet=((a+c)/2)*m;
             this.Kerulet = a+c+(2*b);
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Kor(double r)
+        public string Kor(double r)
         {
             this.Kerulet = 2*r*Math.PI;
             this.Terulet =Math.PI*(r*r) ;
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Rombusz(double e, double f, double a)
+        public string Rombusz(double e, double f, double a)
         {
             this.Terulet = e*f/2;
             this.Kerulet = 4 * a;
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Teglalap(double a, double b)
+        public string Teglalap(double a, double b)
         {
             this.Kerulet = a*b;
             this.Terulet = 2 * a + 2 * b;
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public void Negyzet(double a)
+        public string Negyzet(double a)
         {
             this.Kerulet = 4 * a;
             this.Terulet = a * a;
+            return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
     }
 }

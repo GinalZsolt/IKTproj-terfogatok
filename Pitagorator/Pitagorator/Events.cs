@@ -69,20 +69,22 @@ namespace Pitagorator
         {
             Calculation.Sikidom sikidomCal = new Calculation.Sikidom();
             Calculation.Test testCal = new Calculation.Test();
+            string output="";                                              //messagebox üzenet az alakzat tulajdonságainak kiírásához
             switch (alakzat)
             {
-                case "Háromszög": sikidomCal.Haromszog(Convert.ToDouble(Control.Find("a_value",true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text)); break;
-                case "Henger": testCal.Henger(Convert.ToDouble(Control.Find("r_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
-                case "Paralelogramma": sikidomCal.Paralelogramma(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
-                case "Négyzet": sikidomCal.Negyzet(Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;
-                case "Deltoid": sikidomCal.Deltoid(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text), Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;
-                case "Gömb": testCal.Gomb(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
-                case "Gúla": testCal.Gula(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text), Convert.ToDouble(Control.Find("M_value", true)[0].Text)); break;
-                case "Trapéz": sikidomCal.Trapez(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
-                case "Kör": sikidomCal.Kor(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
-                case "Rombusz": sikidomCal.Rombusz(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text),Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;
-                case "Téglalap": sikidomCal.Teglalap(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;
+                case "Háromszög": output=sikidomCal.Haromszog(Convert.ToDouble(Control.Find("a_value",true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text)); break;
+                case "Henger": output = testCal.Henger(Convert.ToDouble(Control.Find("r_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
+                case "Paralelogramma": output = sikidomCal.Paralelogramma(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
+                case "Négyzet": output = sikidomCal.Negyzet(Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;
+                case "Deltoid": output = sikidomCal.Deltoid(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text), Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;
+                case "Gömb": output = testCal.Gomb(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
+                case "Gúla": output = testCal.Gula(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("M_value", true)[0].Text)); break;
+                case "Trapéz": output = sikidomCal.Trapez(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
+                case "Kör": output = sikidomCal.Kor(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
+                case "Rombusz": output = sikidomCal.Rombusz(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text),Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;
+                case "Téglalap": output = sikidomCal.Teglalap(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;
             }
+            MessageBox.Show(output);
         }
 
         public void Szamolo_FormClosing(object sender, FormClosingEventArgs e, Form Welc_Form, Form Szamolo_Form)     //form closing event open welc form
