@@ -111,9 +111,9 @@
         </div>
           <hr class="mb-5 mt-5">
           <div class="formdiv" id="kapcsolat">
-            <form action="/api/send-message" method="post">
+            <form action="/api/new-ticket" method="post">
                 <h4>Küldjön Üzenetet</h6>
-                
+                <div class="alert d-none"></div>
                 <div class="mb-3">
                   <label for="name" class="form-label">Név:</label>
                   <input type="text" class="form-control" name="name" id="name">
@@ -128,9 +128,7 @@
                   <label for="message" class="form-label"> Üzenet:</label>
                   <textarea class="form-control" name="message" id="message"></textarea>
                 </div>
-
-                <button type="submit" class="btn">Küldés</button>
-
+                <input type="button" class="btn" id="Send" value="Küldés">
               </form>
             </div>
         </div>
@@ -141,6 +139,7 @@
           2022
         </footer>
     </div>
+    <script src="/js/promo.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

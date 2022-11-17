@@ -16,8 +16,8 @@
     <div class="container-fluid p-0">
         <header class="py-5 text-center"><h1>{{title}} - Admin</h1></header>
         <main class="py-5" ng-controller="tableData">
-            <h2 class="px-3 mb-5">Beérkezett üzenetek</h2>
-            <h2 class="fs-2 text-center my-5 text-danger" ng-if="rows.length==0">Nincs még beküldött adat!</h2>
+            <h2 class="px-3" ng-class="{mb-5:rows.length>0}">Beérkezett üzenetek</h2>
+            <h3 class="fs-2 text-center my-auto text-danger" ng-if="rows.length==0">Nincs még beküldött adat!</h3>
             <div ng-if="rows.length>0" class="table-responsive px-2">
                 <div class="p-3 rounded" id="border">
                     <table class="table table-bordered align-middle">
