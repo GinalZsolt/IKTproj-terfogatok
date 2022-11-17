@@ -42,7 +42,9 @@ form{
     border-radius: 0.25rem;
 }
 main{
-    margin-top:auto;
+    flex: 1 1 auto;
+    display:flex;
+    flex-flow:column;
 }
 footer{
     background: var(--promo-dark);
