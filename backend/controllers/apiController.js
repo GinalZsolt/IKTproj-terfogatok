@@ -67,7 +67,7 @@ function auth(){
                 else if (data.length==0){
                     res.status(401).send('Hibás token!')
                 }
-                else if (data[0]==req.headers.authorization.split('Basic')[1]){
+                else if (data[0].token==req.headers.authorization.split('Basic')[1]){
                     next();
                 }
                 else res.status(401).send('Hibás token!');
