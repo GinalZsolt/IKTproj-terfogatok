@@ -21,7 +21,7 @@ namespace Pitagorator
                 Name = $"{oldalnev}_{tulajnev}",
                 Top = top + 20,
                 Left = 49,
-                Width = 120,
+                Width = 170,
                 Height = 15,
                 Text = $"Kérem a(z) {oldalnev} {tulajnev}-(o)t:",
                 Visible=true

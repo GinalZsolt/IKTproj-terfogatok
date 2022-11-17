@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculation\Egyenlotlenseg.cs" />
     <Compile Include="Calculation\Sikidom.cs" />
     <Compile Include="Calculation\Test.cs" />
     <Compile Include="Generators\CalcInpGen.cs" />

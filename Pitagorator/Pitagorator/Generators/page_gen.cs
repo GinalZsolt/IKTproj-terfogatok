@@ -62,10 +62,8 @@ namespace Pitagorator
         {
             p_box.Image = Properties.Resources.adat_gula;
             CalcInpGen.Inputdesign(60, "M", Controls, "testmagassag");
-            CalcInpGen.Inputdesign(120, "m", Controls, "magassag");
-            CalcInpGen.Inputdesign(180, "a", Controls, "oldal");
-            CalcInpGen.Inputdesign(240, "b", Controls, "oldal");
-            Controls.Add(szamolo_form_elements_generate.szamolBtnGen(300));
+            CalcInpGen.Inputdesign(120, "a", Controls, "oldal");
+            Controls.Add(szamolo_form_elements_generate.szamolBtnGen(180));
         }
 
         public void gombOldal()        //gomb page generator
