@@ -70,8 +70,8 @@ namespace Pitagorator.Calculation
         public string Teglalap(double a, double b)
         {
             if (!check.Teglalap(a,b)) return "A síkidom nem valós";
-            this.Kerulet = a*b;
-            this.Terulet = 2 * a + 2 * b;
+            this.Terulet = a*b;
+            this.Kerulet = 2 * a + 2 * b;
             return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
