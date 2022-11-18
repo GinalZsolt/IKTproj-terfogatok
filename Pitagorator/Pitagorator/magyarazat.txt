@@ -1,0 +1,13 @@
+Form1.cs, Szamaolo.cs: kezdõ és számoló form 
+FileOper.cs: file mûveletek
+Events.cs: Minden esemény a programban 
+
+/Generators/CalcInpGen.cs: számoló form inputok generálása
+/Generators/page_gen.cs: számoló form inputjainak alakzattól függõ kialakítása 
+/Generators/szamolo_form_elements_generate.cs: Szamolo form input elemeinek létrehozása külön metódusokkal
+
+/FormDesign/szamolo_form_elements_des.cs: szamolo form alakzat nélküli alap elemeinek beállítása
+/FormDesign/welc_form_elements_des.cs: kezdõ form alap elemeinek létrehozása és beállítása
+
+/Calculation/Sikidom: sikidomok számolása
+/Calculation/Test: testek számolása
