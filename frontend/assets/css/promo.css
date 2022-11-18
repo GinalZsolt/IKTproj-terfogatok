@@ -68,6 +68,12 @@ form{
     width: 70%;
     
 }
+.dl-btn:hover{
+    border:1px solid #71ff63;
+}
+#Send:hover{
+    border:1px solid #428d3c;
+}
 .form-div{
     width: 75%;
 }
