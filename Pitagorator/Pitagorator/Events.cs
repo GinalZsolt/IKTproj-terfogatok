@@ -81,7 +81,7 @@ namespace Pitagorator
                     case "Deltoid": output = sikidomCal.Deltoid(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text), Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;
                     case "Gömb": output = testCal.Gomb(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
                     case "Gúla": output = testCal.Gula(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("M_value", true)[0].Text)); break;
-                    case "Trapéz": output = sikidomCal.Trapez(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text), Convert.ToDouble(Control.Find("m_value", true)[0].Text)); break;
+                    case "Trapéz": output = sikidomCal.Trapez(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text), Convert.ToDouble(Control.Find("c_value", true)[0].Text)); break;
                     case "Kör": output = sikidomCal.Kor(Convert.ToDouble(Control.Find("r_value", true)[0].Text)); break;
                     case "Rombusz": output = sikidomCal.Rombusz(Convert.ToDouble(Control.Find("e_value", true)[0].Text), Convert.ToDouble(Control.Find("f_value", true)[0].Text), Convert.ToDouble(Control.Find("a_value", true)[0].Text)); break;
                     case "Téglalap": output = sikidomCal.Teglalap(Convert.ToDouble(Control.Find("a_value", true)[0].Text), Convert.ToDouble(Control.Find("b_value", true)[0].Text)); break;

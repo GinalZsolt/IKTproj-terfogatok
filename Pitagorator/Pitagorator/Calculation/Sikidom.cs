@@ -43,9 +43,10 @@ namespace Pitagorator.Calculation
             return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";
         }
 
-        public string Trapez(double a, double b, double c, double m)
+        public string Trapez(double a, double b, double c)
         {
-            if (!check.Trapez(a,b,c,m)) return "A síkidom nem valós";
+            double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow((a - c) / 2, 2));
+            if (!check.Trapez(a,b,c)) return "A síkidom nem valós";
             this.Terulet=((a+c)/2)*m;
             this.Kerulet = a+c+(2*b);
             return $"A síkidom Területe: {this.Terulet:0.00} \nA síkidom Kerülete: {this.Kerulet:0.00}";

@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pitagorator",
+    "\\Pitagorator\\Pitagorator",
+    "\\Pitagorator\\Pitagorator\\Calculation"
   ],
+  "SelectedNode": "\\Pitagorator\\Pitagorator\\Calculation\\Sikidom.cs",
   "PreviewInSolutionExplorer": false
 }
