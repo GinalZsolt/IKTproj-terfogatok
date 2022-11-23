@@ -54,8 +54,7 @@ namespace Pitagorator
             CalcInpGen.Inputdesign(60, "a", Controls, "oldal");
             CalcInpGen.Inputdesign(120, "b", Controls, "oldal");
             CalcInpGen.Inputdesign(180, "c", Controls, "oldal");
-            CalcInpGen.Inputdesign(240, "m", Controls, "magassag");
-            Controls.Add(szamolo_form_elements_generate.szamolBtnGen(300));
+            Controls.Add(szamolo_form_elements_generate.szamolBtnGen(240));
         }
 
         public void gulaOldal()    //gula page generator

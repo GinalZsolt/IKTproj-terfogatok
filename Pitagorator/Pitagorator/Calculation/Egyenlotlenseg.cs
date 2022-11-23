@@ -64,9 +64,10 @@ namespace Pitagorator.Calculation
             return (b >= m);
         }
 
-        public bool Trapez(double a, double b, double c, double m)
+        public bool Trapez(double a, double b, double c)
         {
-            if (a <= 0 || b <= 0 || c <= 0 || m <= 0) return false;
+            double m = Math.Sqrt(Math.Pow(b, 2) - Math.Pow((a - c) / 2, 2));
+            if (a <= 0 || b <= 0 || c <= 0 || m<0 ) return false;
             return (b>(a-c) / 2 && b>=m && b<=m+(a-c) / 2);
         }
     }
