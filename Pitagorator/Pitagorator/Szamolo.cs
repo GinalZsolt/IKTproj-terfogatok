@@ -36,6 +36,51 @@ namespace Pitagorator
             page_gen page = new page_gen(p_box, this.Controls);
             Button szamoloBtn = this.Controls.Find("szamolo_btn", true)[0] as Button;
             szamoloBtn.Click += delegate (object senderr, EventArgs ee) { esemeny.szamolo_btn_Click(sender, e, this.Controls, Alakzat); };
+
+            for (int i = 0; i < this.Controls.Count; i++)
+            {
+                if (this.Controls[i].Name.Contains("_value"))
+                {
+                    string azon = this.Controls[i].Name.Split('_')[0];
+                    this.Controls[i].Click += delegate
+                    {
+                        ImageBoxChanger($"{Alakzat.ToLower()}_{azon}");
+                    };
+                }
+            }
+        }
+        private void ImageBoxChanger(string changeto)
+        {
+            (Controls.Find("p_box", true)[0] as PictureBox).Image = Properties.Resources.ResourceManager.GetObject(ATALAKITO(changeto)) as Image;
+        }
+        private string ATALAKITO(string input)
+        {
+            string str = "";
+            foreach (char c in input)
+            {
+                switch (true)
+                {
+                    case true when (c == 'á'):
+                        str += 'a';
+                        break;
+                    case true when (c == 'ü' || c == 'ű' || c == 'ú'):
+                        str += "u";
+                        break;
+                    case true when (c == 'é'):
+                        str += 'e';
+                        break;
+                    case true when (c == 'ó' || c == 'ö' || c == 'ő'):
+                        str += 'o';
+                        break;
+                    case true when (c == 'í'):
+                        str += 'i';
+                        break;
+                    default:
+                        str += c;
+                        break;
+                }
+            }
+            return str;
         }
     }
 }
