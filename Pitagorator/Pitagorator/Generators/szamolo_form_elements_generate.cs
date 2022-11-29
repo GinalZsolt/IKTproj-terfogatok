@@ -30,7 +30,7 @@ namespace Pitagorator
 
         public static TextBox textboxGen(string oldalnev, int top)      //szamolo form textbox input generator
         {
-            return new TextBox()
+            TextBox txtb = new TextBox()
             {
                 Name = $"{oldalnev}_value",
                 Top = top + 20,
@@ -39,6 +39,8 @@ namespace Pitagorator
                 Height=10,
                 Visible=true
             };
+            
+            return txtb;
         }
 
         public static Label cmLabelGen(int left, int top)   //haven't used it, but in case its necesary

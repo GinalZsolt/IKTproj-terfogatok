@@ -45,6 +45,13 @@ namespace Pitagorator
             welc_form.Hide();
         }
 
+        //SZAMOLO FORM GOTFOCUS EVENTS------------------------------------
+
+        public void textBox_GotFocus(object sender, EventArgs e, string alakzatnev, string oldalnev)
+        {
+            
+        }
+
         //SZAMOLO FORM EVENTS---------------------------------------------
 
         public void imageandinputs(string alakzat, Control.ControlCollection control)

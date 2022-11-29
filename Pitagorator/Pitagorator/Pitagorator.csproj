@@ -136,9 +136,6 @@
     <None Include="Resources\adat-deltoid.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\adat-gula.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\adat-haromszog.png" />
   </ItemGroup>
   <ItemGroup>
@@ -160,10 +157,88 @@
     <None Include="Resources\adat-teglalap.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\adat-hurtrapez.png" />
+    <None Include="Resources\adat-gomb.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\adat-gomb.png" />
+    <None Include="Resources\deltoid-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid-e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deltoid-f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gomb-r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gula-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gula-M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haromszog-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haromszog-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haromszog-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\henger-m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\henger-r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kor-r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\negyzet-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralelogramma-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralelogramma-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paralelogramma-m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombusz-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombusz-e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rombusz-f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teglalap-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teglalap-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hurtrapez-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hurtrapez-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hurtrapez-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adat-gula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adat-hurtrapez.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
