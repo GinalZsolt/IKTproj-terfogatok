@@ -25,7 +25,6 @@ namespace Pitagorator
 
         public void teglalapOldal()                        //teglalap page generator
         {
-            
             p_box.Image = Properties.Resources.adat_teglalap;
             CalcInpGen.Inputdesign(60, "a", Controls, "oldal");
             CalcInpGen.Inputdesign(120, "b", Controls, "oldal");
