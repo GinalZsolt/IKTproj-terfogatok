@@ -1,0 +1,11 @@
+Henger
+Paralelogramma
+Négyzet
+Deltoid
+Gömb
+Gúla
+Trapéz
+Kör
+Rombusz
+Téglalap
+Háromszög

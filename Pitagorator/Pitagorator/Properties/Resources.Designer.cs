@@ -171,6 +171,25 @@ namespace Pitagorator.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Henger
+        ///Paralelogramma
+        ///Négyzet
+        ///Deltoid
+        ///Gömb
+        ///Gúla
+        ///Trapéz
+        ///Kör
+        ///Rombusz
+        ///Téglalap
+        ///Háromszög.
+        /// </summary>
+        internal static string alakzatok {
+            get {
+                return ResourceManager.GetString("alakzatok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap deltoid {

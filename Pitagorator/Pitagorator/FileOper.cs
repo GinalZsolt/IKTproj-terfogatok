@@ -13,7 +13,11 @@ namespace Pitagorator
         public static List<string> alakzatNevek(string filename)            //file operations
         {
             List<string> nevek = new List<string>();
-            StreamReader read = new StreamReader(filename, Encoding.Default);
+            foreach (string line in Properties.Resources.alakzatok.Split('\n'))
+            {
+                nevek.Add(line);
+            }
+            StreamReader read = new StreamReader(Properties.Resources.alakzatok, Encoding.Default);
             try
             {
                 while (!read.EndOfStream)
