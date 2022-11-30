@@ -1,0 +1,11 @@
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Release\Pitagorator.exe.config
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Release\Pitagorator.exe
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\bin\Release\Pitagorator.pdb
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.csproj.AssemblyReference.cache
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.Form1.resources
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.Properties.Resources.resources
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.Szamolo.resources
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.csproj.GenerateResource.cache
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.csproj.CoreCompileInputs.cache
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.exe
+D:\xampp\htdocs\2-14-SZFT\IKT II\IKTproj-terfogatok\Pitagorator\Pitagorator\obj\Release\Pitagorator.pdb

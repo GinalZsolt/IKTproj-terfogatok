@@ -184,10 +184,9 @@
   <data name="adat-gomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adat-gomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="alakzatok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\alakzatok.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
-=======
+	<value>..\bin\Debug\alakzatok.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
   <data name="deltoid_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deltoid-a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -262,6 +261,5 @@
   </data>
   <data name="trapez_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hurtrapez-c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 25996a09ca092c98c1a81dabc402871fd7558d3b
   </data>
 </root>

@@ -10,7 +10,7 @@ namespace Pitagorator
 {
     class welc_form_elements_des
     {
-        static List<string> alakzatnevek = FileOper.alakzatNevek("alakzatok.txt");      //reads and stores the alakzatok.txt 
+        static List<string> alakzatnevek = FileOper.alakzatNevek();      //reads and stores the alakzatok.txt 
 
         public static void btnSetProp(Button start_btn, PictureBox p_box, int formwidth)    //welcome form start button property set
         {
